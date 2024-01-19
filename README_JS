@@ -1,0 +1,46 @@
+Order Calculator**
+
+This is a simple order calculator program written in JavaScript. It calculates the total cost of an order based on the quantities of products selected, applies different types of discounts, and includes options for gift wrapping and shipping fees.
+
+Installation:
+To use this program, please follow these steps:
+
+- Clone this repository to your local machine.
+-> git clone https://github.com/your-username/order-calculator.git
+
+- Navigate to the project directory.
+-> cd order-calculator
+
+- Install the required dependencies.
+-> npm install
+
+- Usage
+To run the program, use the following command:
+
+The program will prompt you to enter the quantities for each product and whether you want gift wrapping. After entering the necessary information, it will display an order summary with the total cost, applied discounts, shipping fee, and gift wrap fee.
+
+**Code Overview**:
+The code is organized into several functions to perform different tasks. 
+
+Here's a description of what each function does:
+-- calculateTotal(products, quantities, giftWrap)
+
+This function calculates the total cost of the order. It takes three parameters:
+
+- products: An array of product objects, each containing the name and price.
+- quantities: An array of quantities corresponding to each product.
+- giftWrap: A boolean value indicating whether gift wrapping is desired.
+
+The function iterates over the products and quantities, calculates the product total, applies various discounts based on conditions, calculates the shipping fee and gift wrap fee, and returns an object containing the order summary.
+
+-- getUserInput(pro)
+This function is a utility function that uses the readline module to prompt the user for input and returns a promise that resolves with the user's answer. It takes a prompt parameter, which is the message displayed to the user.
+
+--main()
+This is the main function that serves as the program's entry point. It runs the order calculation process by calling other functions and displays the order summary.
+
+Other Supporting Functions:
+There are other supporting functions in the code, such as format currency () to format currency values, and the use of the readline module to handle user input from the command line.
+
+Customization:
+You can customize the products and their prices by modifying the product array in the index.js file. Add or remove products as needed, and update their names and prices accordingly.
